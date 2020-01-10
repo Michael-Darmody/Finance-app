@@ -7,4 +7,12 @@ class Bank {
   deposite(total) {
     this.balance += total;
   }
+
+  withdraw(total) {
+    if(total > this.balance) {
+      console.log('Insufficent funds, cannot withdraw')
+    } else {
+      this.balance -= total;
+    }
+  }
 }
