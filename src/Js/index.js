@@ -15,4 +15,8 @@ class Bank {
       this.balance -= total;
     }
   }
+
+  showBalance() {
+    console.log(`Your balance is £${this.balance}`)
+  }
 }
